@@ -1,0 +1,117 @@
+/*  Here is font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* .work-sans-<uniquifier> {
+  font-family: "Work Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+*{
+    padding: 0%;
+    margin:0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Work Sans", serif;
+}
+/* start header styling  */
+.header{
+    background-color: #ff8f0e28;
+}
+.header_container{
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 2px solid yellow;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .nav_title{
+ font-size:2.8rem;
+}
+        /* navbar links */
+.navbar_links{
+  display: flex;
+  align-items: center;
+}
+.navbar_links li {
+    list-style: none;
+    margin-right: 40px;
+}
+.navbar_links li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* banner style  */
+
+.banner_contant_box{
+    display: flex;
+    max-width:860px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px 20px ;
+}
+.banner_title{
+    font-size:4rem ;
+    font-weight:700;
+    margin: 20px 0;
+}
+.banner_btn_box button{
+    margin: 20px 0;
+}
+.banner_btn_box button:hover{
+     color: black;
+     border: 2px solid #FF900E;
+     background-color: white;
+}
+.banner_image_box img{
+    width:100%;
+}
+
+/* shared styles */
+.text_color_gray{
+    color: #727272;
+    font-size: 16px;
+}
+.btn_primay{
+    color: white;
+    background-color: #FF900E;
+    padding: 20px 25px;
+    border-radius: 8px;
+    font-size: 20px;
+    border: 2px solid #FF900E;
+    
+}
+
+@media screen and (max-width:576px) {
+    .navbar
+    ,.navbar_links{
+       flex-direction: column;
+    }
+    .navbar_links li a {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        margin;
+    }
+    .navbar_links{
+        margin: 20px 0;
+    }
+    .banner_contant_box{
+        padding: 20px 20px ;
+    }
+    
+    .banner_title{
+        font-size:3rem ;
+        font-weight:700;
+        margin: 20px 0;
+    }
+    
+}
